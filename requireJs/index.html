@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>requireJs</title>
+</head>
+<body>
+	requireJs遵循AMD规范<br>
+	对模块依赖的态度是<b>预执行</b>
+	
+	就是尽早的执行依赖的模块，相当于所有require的模块都提前执行了，而且执行的顺序也不一定100%就先mod1再mod2 <br>
+
+	因此我们看到的顺序跟我们预想的顺序是完全不一样的。<br>
+	-------
+	注意我这里说的是执行(真正运行define中的代码)模块, 而非加载(load文件)模块.  <br>
+	模块的加载都是并行的, 没有区别, 区别在于执行模块的时机, 或者说是解析. <br>
+	<script src="require.js" data-main="config"></script>
+	
+</body>
+</html>
